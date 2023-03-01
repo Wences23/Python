@@ -1,0 +1,50 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sofia+Sans:ital,wght@1,200&display=swap');
+
+/*el asterisco es como un comodin, que seria que le aplica a todos los elementos, es un "general" despues si existen particulares definiciones, se aplicaran esas, por eso es cascada style*/
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+* {
+    /*reinicio los valores por defecto*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  
+  *{
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+  }
+  section#hero{
+background-color: gray;
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+}
+  h1{
+    font-size: 3rem;
+    background-color: gray;
+  }
+
+ h2{
+  font-size: 2rem;
+  background-color: gray;
+}
+.project-list{
+    display: inline-block;
+    
+
+}
+.project-detail{
+border: 5px solid lightseagreen;
+width: 300px;
+border-radius: 5px;
+margin: 20px;
+}
+.project-detail img{
+     width: 100%;
+}
