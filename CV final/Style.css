@@ -1,6 +1,3 @@
-/*google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sofia+Sans:ital,wght@1,200&display=swap');
-
 /*el asterisco es como un comodin, que seria que le aplica a todos los elementos, es un "general" despues si existen particulares definiciones, se aplicaran esas, por eso es cascada style*/
 nav ul{
     display: flex;
@@ -34,8 +31,10 @@ align-items: center;
   font-size: 2rem;
   background-color: gray;
 }
-.project-list{
-    display: inline-block;
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 
 }
