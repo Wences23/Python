@@ -10,18 +10,66 @@
 <body>
     <header>
         <ul>
-            <li>Home</li>
-            <li>Proyects Sailing</li>
-            <li>Contact</li>
+          <li>
+            <a href="#informacion general">Informacion general</a> 
+          </li>
+          <li>
+            <a href="#projects">Navegaciones realizadas</a>
+          </li>
+          <li>
+            <a href="#contact">Formulario de contacto</a>
+          </li>
         </ul>
     </header>
+    
     <main>
+
 <section id="hero">
+
     <h1>Trapiella Ignacio Wenceslao</h1>
-    <h2>Junior developer HTML CSS JAVASCRIPT</h2>
-    <h2>Sailerman, skipper</h2>
+
+
     <img src="https://media.licdn.com/dms/image/C4E03AQGn21q5j4qxEA/profile-displayphoto-shrink_800_800/0/1516842321049?e=2147483647&v=beta&t=K6fCLZt85Uo4O7lpA9haKNLiO6sij43Z98mK6cBt9BY" alt="Trapiella Wenceslao">
+    <h2>Junior developer HTML5 CSS3 JAVASCRIPT</h2>
+    <h2>Sailerman and skipper profesional</h2>
+
 </section>
+<section id="informacion general">
+        <!-- Contenedor -->
+    <div class="container">
+      <!-- Seccion de Informacion Personal -->
+      <div class="section">
+        <h2 class="section-title">Información Personal</h2>
+        <div class="section-content">
+          <p><strong>Fecha de nacimiento:</strong> 07/08/1989</p>
+          <p><strong>Dirección:</strong> via Tratturo Pulsano n6, Manfredonia, Italy</p>
+          <p><strong>Teléfono:</strong> (+39) 3463-007605</p>
+          <p><strong>Email:</strong> wenceslaotrapiella@gmail.com</p>
+        </div>
+      </div>
+      <!-- Seccion de Educacion -->
+      <div class="section">
+        <h2 class="section-title">Educación</h2>
+        <div class="section-content">
+          <p><strong>Universidad:</strong> Universidad Nacional de La Plata</p>
+          <p><strong>Carrera:</strong> Ingeniería Industrial</p>
+          <p><strong>Fecha de graduación:</strong> 08/12/2007</p>
+        </div>
+      </div>
+      <!-- Sección de Experiencia Laboral -->
+      <div class="section">
+        <h2 class="section-title">Experiencia Laboral</h2>
+        <div class="section-content">
+          <p><strong>Empresa:</strong> Tecnologia Workout</p>
+          <p><strong>Puesto:</strong> Desarrollador Web y redes</p>
+          <p><strong>Fecha de inicio:</strong> 01/01/2019</p>
+          <p><strong>Fecha de finalización:</strong> 01/01/2021</p>
+        </div>
+      </div>
+    </div>
+
+</section>
+
 <section id="projects">
     
     <h2>Navegaciones realizadas</h2>
@@ -71,10 +119,17 @@
     <input type="text"placeholder="escribe el motivo">
 </div>
 <div>
+    <p id="demo">Deje su mensaje aqui</p>
     <label>Mensaje</label>
     <textarea></textarea>
+    <button type="button" onclick="myFunction()">Enviar</button>
+  
 </div>
-<button>Enviar</button>
+<script>
+    function myFunction() { 
+      document.getElementById("demo").innerHTML = "Mensaje enviado con exito, gracias por su tiempo";
+    }
+    </script>
 </form>
 
 
@@ -83,8 +138,9 @@
     </main>
     <footer>
         <h1></h1>
-        @wenceslaotrapiella
-        <a href=»#primerp»>Ir al inicio de este artículo</a>
+        En Insta @navegandoporelglobo
+        <a href="#Indice">Ir al inicio del curriculum</a> 
+</a>
     </footer>
 </body>
 </html>

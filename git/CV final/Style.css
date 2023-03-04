@@ -1,20 +1,39 @@
-/*el asterisco es como un comodin, que seria que le aplica a todos los elementos, es un "general" despues si existen particulares definiciones, se aplicaran esas, por eso es cascada style*/
+* {
+  /*reinicio los valores por defecto*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
 nav ul{
     display: flex;
     justify-content: center;
     list-style: none;
 }
-* {
-    /*reinicio los valores por defecto*/
+
+  *{
+    font-family:cursive;
+    }
+  ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    overflow: hidden;
+    background-color: gray;
   }
   
-  *{
-    font-family: Arial, sans-serif;
-    background-color: lightgrey;
+  li {
+    float: left;
   }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
   section#hero{
 background-color: gray;
 display: flex;
@@ -26,7 +45,9 @@ align-items: center;
     font-size: 3rem;
     background-color: gray;
   }
-
+.imagen{
+  float: right;
+}
  h2{
   font-size: 2rem;
   background-color: gray;
@@ -35,7 +56,6 @@ align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 
 }
 .project-detail{
@@ -46,4 +66,25 @@ margin: 20px;
 }
 .project-detail img{
      width: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.section {
+  margin-top: 50px;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.section-content {
+  margin-top: 20px;
+  font-size: 18px;
 }
